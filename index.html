@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to Javascript</title>
+  <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+  <main>
+
+    <h1>Introduction to Javascript</h1>
+    <section>
+      <h3>Informing Users</h3>
+      <div class="content">
+        Write a message to the user when a button is pressed.
+      </div>
+      <div class="center">
+        <button onclick="sayHello()">Say Hello!!!</button>
+      </div>
+    </section>
+    <section>
+      <h3>Change Background</h3>
+      <div class="content">
+        Change the background color of the webpage with a button press.
+      </div>
+      <div class="center">
+        <button onclick="changeBackground()">Change Background</button>
+      </div>
+    </section>
+
+  </main>
+
+
+  <script type="module" src="tests/run.js"></script>
+
+</body>
+
+</html>
