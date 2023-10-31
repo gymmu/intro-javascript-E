@@ -7,7 +7,7 @@ describe("Exercise 1", () => {
 })
 
 describe("Exercise 2", () => {
-  it("The function 'changeBackground()' must eist", () => {
+  it("The function 'changeBackground()' must exist", () => {
     assert.equal(typeof changeBackground, "function")
   })
   it("Should change the background color of the body", () => {
@@ -28,26 +28,26 @@ describe("Exercise 3", () => {
     const elem = document.querySelector("#to-delete")
     assert.notEqual(elem, null)
   })
-  it("The text from the element #to-delete soll auf 'Inhalt gelöscht' gesetzt werden.", () => {
+  it("The text from the element #to-delete must be set to 'content deleted'.", () => {
     const elem = document.querySelector("#to-delete")
     const textBefore = elem.textContent
     deleteText()
     const textAfter = elem.textContent
     assert.notEqual(textBefore, textAfter)
-    assert.equal(textAfter, "Inhalt gelöscht")
+    assert.equal(textAfter, "content deleted")
     elem.textContent = textBefore
   })
 })
 
 describe("Exercise 4", () => {
-  it("Die Funktion 'incrementCounter()' sollte existieren", () => {
+  it("The function 'incrementCounter()' must exist", () => {
     assert.equal(typeof incrementCounter, "function")
   })
-  it("Es soll ein HTML-Element mit der ID 'counter' geben", () => {
+  it("There must be an HTML element with the id 'counter'.", () => {
     const elem = document.querySelector("#counter")
     assert.notEqual(elem, null)
   })
-  it("Der Counter soll um eins hochgezählt werden, wen die Funktion 'incrementCounter()' verwendet wird.", () => {
+  it("The counter should increase by one every time the function 'incrementCounter()' is applied.", () => {
     const elem = document.querySelector("#counter")
     const counterBefore = parseInt(elem.textContent)
     incrementCounter()
@@ -59,14 +59,14 @@ describe("Exercise 4", () => {
 })
 
 describe("Exercise 5", () => {
-  it("Die Funktion 'decrementCounter()' sollte existieren", () => {
+  it("The function 'decrementCounter()' must exist", () => {
     assert.equal(typeof decrementCounter, "function")
   })
-  it("Es soll ein HTML-Element mit der ID 'counter' geben", () => {
+  it("There must be an HTML element with the id 'counter'.", () => {
     const elem = document.querySelector("#counter")
     assert.notEqual(elem, null)
   })
-  it("Der Counter soll um eins vermindert werden, wen die Funktion 'decrementCounter()' verwendet wird.", () => {
+  it("The counter should decrease by one every time the function 'decrementCounter()' is applied.", () => {
     const elem = document.querySelector("#counter")
     const counterBefore = parseInt(elem.textContent)
     decrementCounter()
@@ -78,14 +78,14 @@ describe("Exercise 5", () => {
 })
 
 describe("Exercise 6", () => {
-  it("Die Funktion 'resetCounter()' sollte existieren", () => {
+  it("The function 'resetCounter()' must exist", () => {
     assert.equal(typeof resetCounter, "function")
   })
-  it("Es soll ein HTML-Element mit der ID 'counter' geben", () => {
+  it("There must be an HTML element with the id 'counter'.", () => {
     const elem = document.querySelector("#counter")
     assert.notEqual(elem, null)
   })
-  it("Der Counter soll auf 0 gesetzt werden, wen die Funktion 'resetCounter()' verwendet wird.", () => {
+  it("The counter should be set to zero when the function 'resetCounter()' is applied.", () => {
     const elem = document.querySelector("#counter")
     const counterBefore = parseInt(elem.textContent)
     resetCounter()
@@ -96,18 +96,18 @@ describe("Exercise 6", () => {
 })
 
 describe("Exercise 7", () => {
-  it("Die Funktion 'writeText()' sollte existieren", () => {
+  it("The function 'writeText()' must exist", () => {
     assert.equal(typeof writeText, "function")
   })
-  it("Es soll ein HTML-Input-Element mit der ID 'input' geben", () => {
+  it("There must be an HTML element with the id 'input'.", () => {
     const elem = document.querySelector("input#input")
     assert.notEqual(elem, null)
   })
-  it("Es soll ein HTML-Element mit der ID 'output' geben", () => {
+  it("There must be an HTML element with the id 'output'.", () => {
     const elem = document.querySelector("#output")
     assert.notEqual(elem, null)
   })
-  it("Der Text von dem Eingabeelement #input, soll in das Element #output geschrieben werden.", () => {
+  it("The text from the input element #input, should be written into the output element #output.", () => {
     const input = document.querySelector("#input")
     const inputText = input.value
     const output = document.querySelector("#output")

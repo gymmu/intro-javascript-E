@@ -22,7 +22,7 @@ Execute the function by pressing a button.
 
 Create a function `deleteText()` and an HTML element with the ID `to-delete`. Bind the `deleteText()` function to a button.
 
-The `deleteText()` function should set the content of the `#to-delete` element to 'Content deleted'.
+The `deleteText()` function should set the content of the `#to-delete` element to 'content deleted'.
 
 All tests for Exercise 3 must pass.
 
