@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(61, 61, 61);
+  color: white;
+}
+
+section {
+  border: 1px solid whitesmoke;
+  padding: 0;
+  margin: 10px 30px;
+  padding-bottom: 10px;
+}
+
+section .center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+section .content {
+  padding: 30px;
+}
+
+section > h3 {
+  margin-top: 0;
+  padding: 10px;
+  border-bottom: 1px solid whitesmoke;
+  text-align: center;
+  background-color: rgb(41, 41, 41);
+}
